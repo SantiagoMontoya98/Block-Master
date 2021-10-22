@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Block master</title>
+</head>
+
+<body>
+
+  <header>
+    <section class="header-container">
+      <figure class="logo">
+        <img src="./images/Logo-BlockMaster.png" alt="Logo Block Master">
+      </figure>
+      <nav class="navegacion">
+        <a href="#">Todas</a>
+        <a href="#">Más valoradas</a>
+        <a href="#">Menos valoradas</a>
+      </nav>
+      <form class="buscador">
+        <input type="text" placeholder="Busca tu pelicula favorita">
+        <figure class="lupa-container">
+          <img src="./images/Logo-Buscador.svg" alt="Buscador">
+        </figure>
+      </form>
+    </section>
+  </header>
+
+  <!-- <section class="poster">
+
+  </section>
+ -->
+  <main>
+    <h1>Todas las películas</h1>
+    <section class="movie-container"></section>
+    <template id="template-movie">
+      <article class="pelicula">
+        <img src="" alt="Pelicula">
+        <!-- <span class="puntaje"><img src="./images/Estrella.svg" alt="estrella"> 5.0</span> -->
+      </article>
+    </template>
+  </main>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
