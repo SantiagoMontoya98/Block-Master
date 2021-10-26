@@ -1,0 +1,80 @@
+$color-amarillo: #fed941;
+$color-fondo: #0c0e16;
+
+.slider {
+  img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    max-width: 90%;
+    height: 310px;
+    left: 78px;
+    top: 136px;
+  }
+  .ver {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    left: 120px;
+    top: 380px;
+  }
+  .ahora {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $color-amarillo;
+    border: none;
+    font-family: "Montserrat Bold";
+    cursor: pointer;
+  }
+  .ahora img {
+    position: static;
+    width: 12px;
+    height: 12px;
+    left: 24px;
+    top: 12px;
+    margin-right: 10px;
+  }
+  .despues img {
+    position: static;
+    width: 15px;
+    height: 15px;
+    left: 24px;
+    top: 12px;
+    margin-right: 10px;
+  }
+  .despues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: $color-amarillo;
+    font-family: "Montserrat Bold";
+    background-color: #0c0e16;
+    border: 1px solid #fed941;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .recorrer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 460px;
+    left: 50%;
+  }
+  .recorrer span {
+    background-color: #a7a9be;
+    margin-right: 1rem;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    cursor: pointer;
+  }
+}

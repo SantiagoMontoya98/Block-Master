@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
   <title>Block master</title>
 </head>
@@ -12,30 +13,40 @@
 <body>
 
   <header>
-    <section class="header-container">
-      <figure class="logo">
-        <img src="./images/Logo-BlockMaster.png" alt="Logo Block Master">
-      </figure>
-      <nav class="navegacion">
-        <a href="#">Todas</a>
-        <a href="#">Más valoradas</a>
-        <a href="#">Menos valoradas</a>
-      </nav>
-      <form class="buscador">
-        <input type="text" placeholder="Busca tu pelicula favorita">
-        <figure class="lupa-container">
-          <img src="./images/Logo-Buscador.svg" alt="Buscador">
-        </figure>
-      </form>
-    </section>
+    <figure class="logo">
+      <img src="./images/Logo-BlockMaster.png" alt="Logo Block Master">
+    </figure>
+    <a href="#" class="todas">Todas</a>
+    <a href="#" class="mas-valoradas">Más valoradas</a>
+    <a href="#" class="menos-valoradas">Menos valoradas</a>
+    <nav class="navegacion-responsive">
+      <a href="#" class="todas-responsive">Todas</a>
+      <a href="#" class="mas-valoradas-responsive">Más valoradas</a>
+      <a href="#" class="menos-valoradas-responsive">Menos valoradas</a>
+    </nav>
+    <article class="buscador">
+      <input type="text" placeholder="Busca tu pelicula favorita">
+      <img src="./images/Logo-Buscador.svg" alt="Buscador" class="lupa">
+    </article>
   </header>
 
-  <!-- <section class="poster">
-
+  <section class="slider">
+    <img src="./images/mulan.png" alt="mulan">
+    <article class="ver">
+      <button class="ahora"><img src="./images/flecha.png" alt="flecha">VER AHORA</button>
+      <button class="despues"><img src="./images/suma.png" alt="suma">VER DESPUÉS</button>
+    </article>
+    <article class="recorrer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </article>
   </section>
- -->
+
   <main>
-    <h1>Todas las películas</h1>
+    <article class="title">
+      <h1>Todas las películas</h1>
+    </article>
     <section class="movie-container"></section>
     <template id="template-movie">
       <article class="pelicula">

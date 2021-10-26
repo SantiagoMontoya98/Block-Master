@@ -1,0 +1,34 @@
+main {
+  position: absolute;
+  left: 78px;
+  top: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  left: 83px;
+  top: 500px;
+  font-family: "Montserrat Bold";
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  h1 {
+    color: #fffffe;
+  }
+  .movie-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+  }
+  .movie-container .pelicula img {
+    width: 220px;
+    height: 330px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    margin-right: 1.2rem;
+  }
+}

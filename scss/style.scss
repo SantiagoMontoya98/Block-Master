@@ -1,0 +1,39 @@
+$color-amarillo: #fed941;
+$color-fondo: #0f0e17;
+
+html {
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $color-fondo;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/Inter.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/Montserrat.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../assets/Montserrat-bold.ttf");
+  font-display: swap;
+}
+
+@import "files/header";
+@import "files/slider";
+@import "files/main";
