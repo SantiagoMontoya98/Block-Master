@@ -1,0 +1,72 @@
+$color-amarillo: #fed941;
+$color-negro: black;
+
+#mainFormUsuario {
+  width: 50%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat";
+}
+
+.formulario-usuario label {
+  color: white;
+}
+
+.formulario-usuario input {
+  outline: 4px solid #fed941;
+  font-family: "Montserrat Bold";
+}
+
+.formulario-usuario input:focus {
+  outline: 4px solid $color-amarillo;
+  border: 3px solid $color-negro;
+}
+
+.formulario-usuario input::placeholder {
+  font-family: "Montserrat";
+  color: $color-negro;
+}
+
+.formulario-usuario input[type="submit"],
+.formulario-usuario input[type="button"] {
+  background-color: $color-amarillo;
+  border: 2px solid $color-negro;
+  outline: 0;
+  font-family: "Montserrat Bold";
+  transition: all 500ms ease;
+}
+
+.formulario-usuario input[type="submit"]:hover,
+.formulario-usuario input[type="button"]:hover {
+  border: 2px solid $color-amarillo;
+  outline: 0;
+  background-color: $color-negro;
+  color: $color-amarillo;
+}
+
+.margin {
+  margin-top: 20px;
+}
+
+.formulario-usuario h1 {
+  color: $color-amarillo;
+  font-size: 32px;
+  text-align: center;
+  font-family: "Montserrat Bold";
+  margin-bottom: 25px;
+}
+
+.formulario-usuario .validaciones {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
+  background-color: green;
+  padding: 5px;
+  color: white;
+  border-radius: 8px;
+  font-family: "Montserrat Bold";
+  opacity: 0;
+  transition: opacity 500ms ease;
+  margin-top: -25px;
+}

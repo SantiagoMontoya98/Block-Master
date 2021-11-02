@@ -1,4 +1,9 @@
-main {
+$color-fondo: rgba(15, 14, 23, 0.5);
+$color-fondo2: rgba(15, 14, 23, 0.8);
+$colo-negro: #000;
+$color-amarillo: #fed941;
+
+#mainIndex {
   position: absolute;
   left: 78px;
   top: 500px;
@@ -24,11 +29,201 @@ main {
     align-items: center;
     max-width: 100%;
   }
+  .movie-container .pelicula {
+    transition: transform 500ms ease;
+    position: relative;
+    &:hover {
+      transform: scale(0.9);
+    }
+    .puntaje {
+      position: absolute;
+      top: 50px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      background-color: $colo-negro;
+      width: 75px;
+      height: 50px;
+      border: 1px solid $color-amarillo;
+      border-left-width: 0;
+      border-right-width: 0;
+      z-index: 1;
+    }
+    .puntaje img {
+      width: 50px;
+      height: 20px;
+      margin: 0 5px 0 0;
+    }
+    .round {
+      width: 50px;
+      height: 50px;
+      background-color: $colo-negro;
+      position: absolute;
+      top: 50px;
+      left: 45px;
+      border-radius: 50%;
+      border: 1px solid $color-amarillo;
+    }
+  }
   .movie-container .pelicula img {
-    width: 220px;
-    height: 330px;
+    width: 222px;
+    height: 350px;
     margin-bottom: 0.5rem;
     cursor: pointer;
     margin-right: 1.2rem;
+    color: #fffffe;
+    &:hover {
+      border: 5px solid $color-amarillo;
+      border-radius: 8px;
+    }
   }
+  .loader {
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.movie-description-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color-fondo;
+  padding: 2rem;
+  color: #fffffe;
+  font-family: "Montserrat";
+  z-index: 2;
+  transition: transform 500ms ease;
+  .movie-description {
+    background-color: $color-fondo2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: default;
+    .close {
+      font-size: 2rem;
+      position: absolute;
+      right: 48px;
+      top: 48px;
+      cursor: pointer;
+      padding: 0 10px;
+    }
+    iframe {
+      margin-right: 50px;
+    }
+  }
+  .movie-description .mainImg {
+    width: 200px;
+    height: 250px;
+    margin-right: 200px;
+    transform: matrix(0.71, -0.41, 1.22, 0.71, 0, 0);
+  }
+  .movie-description .description {
+    width: 500px;
+    padding-top: 50px;
+  }
+  .movie-description .description h2 {
+    text-align: left;
+    margin-bottom: 0;
+    font-family: "Montserrat Bold";
+  }
+  .movie-description .description p:nth-of-type(1) {
+    line-height: 25px;
+    margin-top: 0;
+    text-align: left;
+  }
+  .description .ver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .description .ahora {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $color-amarillo;
+    border: none;
+    font-family: "Montserrat Bold";
+    cursor: pointer;
+    transition: opacity 400ms ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .description .ahora img {
+    position: static;
+    width: 12px;
+    height: 12px;
+    left: 24px;
+    top: 12px;
+    margin-right: 10px;
+  }
+  .description .despues img {
+    position: static;
+    width: 15px;
+    height: 15px;
+    left: 24px;
+    top: 12px;
+    margin-right: 10px;
+  }
+  .description .despues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: $color-amarillo;
+    font-family: "Montserrat Bold";
+    background-color: #0c0e16;
+    border: 1px solid #fed941;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 400ms ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .description span {
+    margin-right: 10px;
+  }
+  .description i {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: -10px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.translate {
+  transform: translateX(-100%);
+}
+
+.not-found {
+  color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.not-found img {
+  width: 400px;
+  height: 300px;
+}
+
+.not-found p {
+  position: absolute;
+  top: 240px;
 }

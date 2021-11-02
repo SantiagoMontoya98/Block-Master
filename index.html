@@ -6,57 +6,104 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
-  <title>Block master</title>
+  <title>Block Master</title>
 </head>
 
 <body>
 
   <header>
-    <figure class="logo">
-      <img src="./images/Logo-BlockMaster.png" alt="Logo Block Master">
-    </figure>
-    <a href="#" class="todas">Todas</a>
+    <a href="index.html">
+      <figure class="logo">
+        <img src="./images/Logo-BlockMaster.png" alt="Logo Block Master">
+      </figure>
+    </a>
+    <a href="#" class="todas underline">Todas</a>
     <a href="#" class="mas-valoradas">Más valoradas</a>
     <a href="#" class="menos-valoradas">Menos valoradas</a>
-    <nav class="navegacion-responsive">
-      <a href="#" class="todas-responsive">Todas</a>
-      <a href="#" class="mas-valoradas-responsive">Más valoradas</a>
-      <a href="#" class="menos-valoradas-responsive">Menos valoradas</a>
-    </nav>
-    <article class="buscador">
+    <form class="buscador">
       <input type="text" placeholder="Busca tu pelicula favorita">
       <img src="./images/Logo-Buscador.svg" alt="Buscador" class="lupa">
-    </article>
+    </form>
+    <section class="user-movie">
+      <a href="formularioPeliculas.html">
+        <span class="movie">
+          <i class="fas fa-film"></i>
+        </span>
+      </a>
+      <a href="formularioUsuario.html">
+        <span class="user">
+          <i class="fas fa-user"></i>
+        </span>
+      </a>
+    </section>
   </header>
 
-  <section class="slider">
-    <img src="./images/mulan.png" alt="mulan">
-    <article class="ver">
-      <button class="ahora"><img src="./images/flecha.png" alt="flecha">VER AHORA</button>
-      <button class="despues"><img src="./images/suma.png" alt="suma">VER DESPUÉS</button>
-    </article>
-    <article class="recorrer">
-      <span></span>
-      <span></span>
-      <span></span>
-    </article>
+  <section class="slider-container">
+
+    <div class="slider">
+      <div class="slider-slides">
+
+      </div>
+
+      <div class="slide-der">&gt;</div>
+
+      <article class="recorrer">
+        <span class="unoS"></span>
+        <span class="dosS"></span>
+        <span class="tresS"></span>
+      </article>
+
+    </div>
+
+    <section class="slide-trailer-container translate">
+
+    </section>
+
+
   </section>
 
-  <main>
+  <main id="mainIndex">
+
     <article class="title">
       <h1>Todas las películas</h1>
     </article>
-    <section class="movie-container"></section>
+    <section class="movie-container">
+
+    </section>
+
+    <img src="./images/loader.svg" class="loader">
+
     <template id="template-movie">
       <article class="pelicula">
         <img src="" alt="Pelicula">
-        <!-- <span class="puntaje"><img src="./images/Estrella.svg" alt="estrella"> 5.0</span> -->
+        <span class="puntaje">
+
+        </span>
+        <span class="round"></span>
+        <p class="title none"></p>
+        <p class="desc none"></p>
+        <p class="date none"></p>
+        <p class="id none"></p>
       </article>
     </template>
+
+    <section class="movie-description-container translate">
+
+    </section>
+
+    <section class="not-found none">
+      <img src="./images/notFound.png" alt="Not Found" title="Not Found">
+      <p></p>
+    </section>
+
   </main>
 
   <script src="./js/script.js"></script>
+  <script src="./js/slider.js"></script>
 
 </body>
 

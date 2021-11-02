@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Registro de Películas</title>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <figure class="logo">
+        <img src="./images/Logo-BlockMaster.png" alt="Logo Block Master">
+      </figure>
+    </a>
+    <section class="user-home">
+      <a href="formularioUsuario.html">
+        <span class="user">
+          <i class="fas fa-user"></i>
+        </span>
+      </a>
+      <a href="index.html">
+        <span class="home">
+          <i class="fas fa-home"></i>
+        </span>
+      </a>
+    </section>
+  </header>
+
+  <main id="mainFormPeli">
+
+    <form class="formulario-peli">
+
+      <h1>Registro de Películas</h1>
+
+      <p class="validaciones"></p>
+
+      <div class="field">
+        <label class="label">Título</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" name="titulo" placeholder="Ingresa el título" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-film"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Género</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" name="genero" placeholder="Ingresa el género"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Ingresa un género valido." required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-film"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Fecha de lanzamiento</label>
+        <div class="control has-icons-left">
+          <input class="input" type="date" name="fecha" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Duración (minutos)</label>
+        <div class="control has-icons-left">
+          <input class="input" type="number" min="10" max="300" name="duracion" placeholder="Ingresa la duración"
+            required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-clock"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field contraseña">
+        <label class="label">Descripción</label>
+        <div class="control has-icons-left">
+          <textarea class="textarea" name="descripcion" placeholder="Ingresa la descripción" required></textarea>
+        </div>
+      </div>
+
+      <div class="field is-grouped is-grouped-centered margin">
+        <p class="control">
+          <input type="submit" class="button" value="Crear">
+        </p>
+        <p class="control">
+          <input type="button" class="button" id="buscar" value="Buscar por título">
+        </p>
+        <p class="control">
+          <input type="button" class="button" id="actualizar" value="Actualizar">
+        </p>
+        <p class="control">
+          <input type="button" class="button" id="eliminar" value="Eliminar">
+        </p>
+      </div>
+
+    </form>
+
+  </main>
+
+  <script src="./js/movies.js"></script>
+
+</body>
+
+</html>

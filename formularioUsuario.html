@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Registro de Usuarios</title>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <figure class="logo">
+        <img src="./images/Logo-BlockMaster.png" alt="Logo Block Master">
+      </figure>
+    </a>
+    <section class="movie-home">
+      <a href="formularioPeliculas.html">
+        <span class="movie">
+          <i class="fas fa-film"></i>
+        </span>
+      </a>
+      <a href="index.html">
+        <span class="home">
+          <i class="fas fa-home"></i>
+        </span>
+      </a>
+    </section>
+  </header>
+
+  <main id="mainFormUsuario">
+
+    <form class="formulario-usuario">
+
+      <h1>Registro de Usuarios</h1>
+
+      <p class="validaciones"></p>
+
+      <div class="field">
+        <label class="label">Nombre</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" name="nombre" placeholder="Ingresa tu nombre"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Ingresa un nombre valido" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-signature"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Apellido</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" name="apellido" placeholder="Ingresa tu apellido"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Ingresa un apellido valido" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-signature"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Correo electronico</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" name="correo" placeholder="Ingresa tu correo electronico"
+            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Ingresa un correo electronico valido" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Nombre de usuario</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" name="nombreUsuario" placeholder="Ingresa tu nombre de usuario"
+            title="Ingresa un nombre de usuario" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field contraseña">
+        <label class="label">Contraseña</label>
+        <div class="control has-icons-left">
+          <input class="input" type="password" name="contraseña" placeholder="Ingresa tu contraseña"
+            title="Ingresa una contraseña" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field is-grouped is-grouped-centered margin">
+        <p class="control">
+          <input type="submit" class="button" value="Crear">
+        </p>
+        <p class="control">
+          <input type="button" class="button" id="buscar" value="Buscar por correo">
+        </p>
+        <p class="control">
+          <input type="button" class="button" id="actualizar" value="Actualizar">
+        </p>
+      </div>
+
+    </form>
+
+  </main>
+
+  <script src="./js/users.js"></script>
+
+</body>
+
+</html>

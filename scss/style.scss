@@ -14,6 +14,7 @@ html {
 body {
   margin: 0;
   background-color: $color-fondo;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -30,10 +31,12 @@ body {
 
 @font-face {
   font-family: "Montserrat Bold";
-  src: url("../assets/Montserrat-bold.ttf");
+  src: url("../assets/Montserrat-Bold.ttf");
   font-display: swap;
 }
 
 @import "files/header";
 @import "files/slider";
 @import "files/main";
+@import "files/formUsuarios";
+@import "files/formPeliculas";

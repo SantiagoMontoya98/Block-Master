@@ -6,7 +6,7 @@ header {
   display: flex;
   align-items: center;
   padding: 24px 83px;
-  max-width: 100%;
+  width: 100%;
   height: 112px;
   background-color: $color-fondo;
 }
@@ -14,6 +14,10 @@ header {
 .logo {
   width: 106.81px;
   height: 64px;
+  transition: transform 500ms ease;
+  &:hover {
+    transform: scale(0.9);
+  }
 }
 
 .todas {
@@ -22,16 +26,26 @@ header {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 19px;
   text-align: center;
-  text-decoration-line: underline;
-  color: $color-amarillo;
   margin-right: 48px;
+  color: $color-blanco;
+  text-decoration-line: none;
   margin-left: 0;
+  transition: all 300ms ease;
+  &:hover {
+    text-decoration-line: underline;
+    color: $color-amarillo;
+  }
 }
 
-.todas-responsive {
+.underline {
+  text-decoration-line: underline;
+  color: $color-amarillo;
+}
+
+/* .todas-responsive {
   width: 48px;
   height: 19px;
   font-family: "Inter", sans-serif;
@@ -42,7 +56,7 @@ header {
   text-align: center;
   text-decoration-line: underline;
   color: $color-amarillo;
-}
+} */
 
 .mas-valoradas {
   width: 114px;
@@ -56,9 +70,14 @@ header {
   color: $color-blanco;
   margin-right: 40px;
   text-decoration-line: none;
+  transition: all 500ms ease;
+  &:hover {
+    text-decoration-line: underline;
+    color: $color-amarillo;
+  }
 }
 
-.mas-valoradas-responsive {
+/* .mas-valoradas-responsive {
   width: 114px;
   height: 19px;
   font-family: "Inter", sans-serif;
@@ -69,7 +88,7 @@ header {
   text-align: center;
   color: $color-blanco;
   text-decoration-line: none;
-}
+} */
 
 .menos-valoradas {
   width: 134px;
@@ -83,9 +102,14 @@ header {
   color: $color-blanco;
   text-decoration-line: none;
   margin-right: 48px;
+  transition: all 500ms ease;
+  &:hover {
+    text-decoration-line: underline;
+    color: $color-amarillo;
+  }
 }
 
-.menos-valoradas-responsive {
+/* .menos-valoradas-responsive {
   width: 134px;
   height: 19px;
   font-family: "Inter", sans-serif;
@@ -96,23 +120,22 @@ header {
   text-align: center;
   color: $color-blanco;
   text-decoration-line: none;
-}
+} */
 
-.navegacion-responsive {
+/* .navegacion-responsive {
   display: none;
   flex-direction: column;
   margin-right: 48px;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .buscador {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  /* width: 500px; */
-  width: 40vw;
+  width: 28vw;
   height: 44px;
   input {
     display: flex;
@@ -131,12 +154,76 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 24px;
+    padding: 10px;
     width: 72px;
     height: 44px;
     background: $color-amarillo;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
+  }
+}
+
+.user-movie {
+  margin-left: 1rem;
+  width: 100px;
+  height: 70px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .movie,
+  .user {
+    font-size: 30px;
+    color: $color-amarillo;
+    transition: opacity 500ms ease;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+.movie-home {
+  margin-left: 1rem;
+  width: 100px;
+  height: 70px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 120px;
+  .movie,
+  .home {
+    font-size: 30px;
+    color: $color-amarillo;
+    transition: opacity 500ms ease;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+.user-home {
+  margin-left: 1rem;
+  width: 100px;
+  height: 70px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 120px;
+  .user,
+  .home {
+    font-size: 30px;
+    color: $color-amarillo;
+    transition: opacity 500ms ease;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
 
