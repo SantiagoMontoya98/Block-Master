@@ -1,4 +1,12 @@
 {
   "users": [
+    {
+      "nombre": "Santiago",
+      "apellido": "Montoya Cano",
+      "correo": "santiagomontoya98@hotmail.com",
+      "nombreUsuario": "SantiagoMontoya98",
+      "contraseña": "12345678",
+      "id": 1
+    }
   ]
 }
